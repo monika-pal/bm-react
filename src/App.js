@@ -12,7 +12,7 @@ export default class App extends Component {
       <Header/>
       <main>
       <Routes>
-      <Route exact path="/Home" element={< Home />}></Route>
+      <Route exact path="/" element={<Home/>}></Route>
       <Route exact path="/About" element={<About/>}></Route>
     </Routes>
       </main>
