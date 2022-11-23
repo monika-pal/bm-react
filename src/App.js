@@ -1,12 +1,23 @@
-import React from "react";
+import React, { Component } from 'react'
+import { Route,Routes,BrowserRouter } from 'react-router-dom';
+import Header from './components/Layout/Header/Header.js'
+import Footer from './components/Layout/Footer/Footer.js'
+import Home from  './components/Pages/Home/Home.js'
+import About from  './components/Pages/About/About.js'
 
-
-function App() {
-  return (
-    <div className="App">
-     hey
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+      <Header/>
+      <main>
+      <Routes>
+      <Route exact path="/Home" element={< Home />}></Route>
+      <Route exact path="/About" element={<About/>}></Route>
+    </Routes>
+      </main>
+      <Footer/>
+    </BrowserRouter>
+    )
+  }
 }
-
-export default App;
