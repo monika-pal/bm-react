@@ -7,6 +7,10 @@ const RouteLinks = [
     component: <Home/>
   },
   {
+    path: "/Home",
+    component: <Home/>
+  },
+  {
     path: "/about",
     component: <About/>
   },
