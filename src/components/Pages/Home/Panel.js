@@ -10,7 +10,7 @@ class Panel extends Component {
     componentDidMount() {
         window.setTimeout(() => {
             this.setState({
-                width : 'calc(100vw - 315px)'
+                width : 'calc(100% - 0px)'
             });
         }, 333);
     }
@@ -23,7 +23,7 @@ class Panel extends Component {
         }
 
         return (
-            <div className='panel'
+            <div className='panel w-full'
                 role='tabpanel'
                 aria-expanded={isActive}>
                 <button className='panel__label'
